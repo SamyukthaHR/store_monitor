@@ -20,11 +20,13 @@ store_id, uptime_last_hour(in minutes), uptime_last_day(in hours), update_last_w
             - if report generation is complete, return “Complete” along with the CSV file with the schema described above.
             
 Installation
+
 To install the required packages, run the following command in the project directory:
 
     pip install -r requirements.txt
     
 Usage
+
 To start the server, run the below command:
 
     python mange.py runserver
