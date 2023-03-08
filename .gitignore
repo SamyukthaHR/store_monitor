@@ -1,0 +1,8 @@
+# Ignore constants file
+constants.py
+settings.py
+dump.rdb
+report.csv
+.env
+migrations
+venv
