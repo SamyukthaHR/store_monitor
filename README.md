@@ -27,9 +27,16 @@ To install the required packages, run the following command in the project direc
     
 Usage
 
+To create tables and make migrations, run the below commands:
+
+        python manage.py makemigrations
+        python manage.py migrate
+
 To start the server, run the below command:
 
     python mange.py runserver
   
   The local server starts running on http://127.0.0.1:8000
+  
   (Example url: http://127.0.0.1:8000/monitor/{end_point})
+
