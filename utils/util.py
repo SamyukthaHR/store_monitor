@@ -221,3 +221,7 @@ def get_store_report(store_status, utc_menu_hours, start_date, end_date):
                                          start_date, end_date, time_info)
         report_dict[item['store_id']] = status
     return report_dict
+
+
+def get_unix_timestamp(timestamp):
+    return datetime.datetime.timestamp(timestamp)
