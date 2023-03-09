@@ -82,7 +82,7 @@ def trigger_report(body, report_id):
         utc_menu_hours = get_utc_menu_hours(store_menu_hours, store_local_timezone, start_date, end_date)
         report_dict = get_store_report(store_status_res, utc_menu_hours, start_date, end_date)
         write_to_csv(report_dict)
-        file_name = str(datetime.now())
+        file_name = str(get_unix_timestamp(curr_timestamp))
         report_url = upload_to_s3(file_name)
         report_status = FAILED if report_url is None else DONE
         update_report_status(report_id, report_status, report_url=report_url)
